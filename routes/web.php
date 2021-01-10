@@ -22,12 +22,5 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/auth/redirect', function () {
-    return Socialite::driver('facebook')->redirect();
-});
-
-Route::get('/auth/callback', function () {
-    $user = Socialite::driver('facebook')->user();
-
-    // $user->token
-});
+Route::get('/login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('/login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
