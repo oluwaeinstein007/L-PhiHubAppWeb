@@ -66,9 +66,19 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
-                            </div>
+                            </div> 
                         </div>
                     </form>
+                    <p></p>
+                    <div class="col-md-6 offset-md-4 justify-content-center">
+                            <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
+                                    Login With Facebook
+                                </button></a>
+
+                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
+                                    Login With Gmail
+                                </button></a>
+                            </div>
                 </div>
             </div>
         </div>

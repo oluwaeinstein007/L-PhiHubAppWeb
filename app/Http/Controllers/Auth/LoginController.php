@@ -60,7 +60,7 @@ class LoginController extends Controller
             Auth::login($check);
             return redirect('/home');
         }else {
-            $data=new User;
+            $data = new User;
             $data->name= $user->name;
             $data->email= $user->email;
             $data->password= bcrypt(123456);
