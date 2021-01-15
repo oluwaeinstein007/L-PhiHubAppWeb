@@ -57,6 +57,14 @@
                                     {{ __('Login') }}
                                 </button>
 
+                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
+                                    Login With Facebook
+                                </button></a>
+
+                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
+                                    Login With Gmail
+                                </button></a>
+
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
