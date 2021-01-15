@@ -83,7 +83,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                <div id="example"></div>
+                <div id="welcome"></div>
             </div>
         </div>
     </body>

@@ -56,15 +56,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
-                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
-                                    Login With Facebook
-                                </button></a>
-
-                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
-                                    Login With Gmail
-                                </button></a>
-
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
@@ -73,6 +64,19 @@
                             </div>
                         </div>
                     </form>
+                    <p></p>
+                    <div class="col-md-6 offset-md-4 ">
+                            <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
+                                    Login With Facebook
+                                </button></a>
+                               <p>
+                               <h1>OR</h1>
+                               </p>
+                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
+                                    Login With Gmail
+                                </button></a>
+                            </div>
+
                 </div>
             </div>
         </div>
