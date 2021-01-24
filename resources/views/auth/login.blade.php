@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card border-dark">
+                <div class="card-header bg-dark text-white border-dark text-center">{{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body border-dark">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -64,22 +64,31 @@
                             </div>
                         </div>
                     </form>
-                    <p></p>
-                    <div class="col-md-6 offset-md-4 ">
+                </div>
+
+                <div class="col-md-6 offset-md-4 justify-content-center">
+                <h5 class="col-md-6 offset-md-4 justify-content-center mt-2 text-muted text-success">OR</h5>
                             <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
                                     Login With Facebook
                                 </button></a>
-                               <p>
-                               <h1>OR</h1>
-                               </p>
+
                                 <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
                                     Login With Gmail
                                 </button></a>
                             </div>
 
-                </div>
+
+
             </div>
         </div>
     </div>
+
+    <marquee>
+    <h8>Welcome back to L'Phi Hub</h8>
+    </marquee> 
+
 </div>
 @endsection
+
+
+

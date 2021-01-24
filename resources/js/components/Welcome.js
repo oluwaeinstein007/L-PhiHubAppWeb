@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
+
 function Welcome() {
     return ( <
         div className = "container" >
@@ -11,14 +13,29 @@ function Welcome() {
         <
         div className = "card" >
         <
-        div className = "card-header" > Welcome Component < /div>
+        div className = "card-header"
+        dataToggle = "tooltip"
+        dataPlacement = "top"
+        title = "Welcome yo" > Welcome Component < /div>
 
         <
-        div className = "card-body" > I 'm an example component!</div> <
+        button className = "btn btn-dark"
+        dataToggle = "tooltip"
+        dataPlacement = "top"
+        title = "Hey yo" >
+        Click me <
+        /button>
+
+        <
+        div className = "card-body"
+        color = "BLUE" > I 'm an example component!</div> <
+        button class = "btn btn-primary" > yes < /button> <
         /div> <
         /div> <
         /div> <
         /div>
+
+
     );
 }
 
