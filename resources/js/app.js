@@ -12,4 +12,6 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/welcome');
+require('./components/Welcome');
+require('./components/About');
+require('./components/RMap');
