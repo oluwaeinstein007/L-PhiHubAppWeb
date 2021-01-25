@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+            <div class="card border-dark">
+                <div class="card-header bg-dark text-white border-dark text-center">{{ __('Register') }}</div>
 
-                <div class="card-body">
+                <div class="card-body border-dark">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -52,7 +52,6 @@
                                 @enderror
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
@@ -66,10 +65,23 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
-                            </div>
+                            </div> 
                         </div>
                     </form>
                 </div>
+
+                <div class="col-md-6 offset-md-4 justify-content-center">
+                <h5 class="col-md-6 offset-md-4 justify-content-center mt-2 text-muted text-success">OR</h5>
+                            <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-primary">
+                            SignUp With Facebook
+                                </button></a>
+
+                                <a href="http://localhost:8000/login/facebook"> <button type="submit" class="btn btn-danger">
+                                SignUp With Gmail
+                                </button></a>
+                            </div>
+
+
             </div>
         </div>
     </div>
