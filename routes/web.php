@@ -14,20 +14,29 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', function(){
+    return view('about');
+});
+Route::get('/contact', function(){
+    return view('contact');
+});
+Route::get('/portfolio', function(){
+    return view('portfolio');
+});
+
+
+
+
+
 
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/auth/redirect', function () {
-    return Socialite::driver('facebook')->redirect();
-});
-
-Route::get('/auth/callback', function () {
-    $user = Socialite::driver('facebook')->user();
-
-    // $user->token
-});
+Route::get('/login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('/login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
