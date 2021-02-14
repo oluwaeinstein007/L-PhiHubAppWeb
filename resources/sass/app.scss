@@ -1,8 +1,25 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+html,
+body {
+    background-color: $black;
+}
+
+m,
+h8 {
+    text-transform: uppercase;
+    color: $yellow;
+}
+
+input {
+    outline-color: $yellow;
+    box-shadow: inset;
+}
+
+nav {
+    outline-color: $yellow;
+}

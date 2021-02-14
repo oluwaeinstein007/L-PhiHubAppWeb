@@ -112,9 +112,34 @@
             <div class="content">
                 <div class="title m-b-md">
                  Contacts
-                    <i class="fa fa-briefcase fa-3x"></i>
+                    
                 </div>
-                <div id="welcome"></div>
+                
+                    <a href="tel:{08057322330}">Call Us</a>
+
+
+                   <div class="card justify-content-center col-sm-8 m-auto rounded">
+                       <div class="card-body" id>
+                       <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
+                 @csrf
+                 
+                 <div class="form-group">
+                 <label for="">Email</label>
+                 <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
+                   <label for="subject">Subject</label>
+                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                 </div>
+                  <div class="form-group">
+                   <label for="">Email</label>
+                 <textarea type="text" class="form-control" name="content" id="video_descrip" placeholder="Email Content"></textarea>
+                 </div>
+         
+               <button class="r btn btn-danger rounded-pill float-right" name="send_email" type="submit">Send Email</button>
+                </form>
+                       </div>
+                  
+                   </div>
+
                 <div id="map"></div>
             </div>
     </body>
