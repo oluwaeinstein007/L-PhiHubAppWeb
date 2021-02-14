@@ -14,7 +14,7 @@
         <link href="/css/app/.css" rel="stylesheet">
         <style>
             html, body {
-                background-color: #fff;
+               
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -123,16 +123,14 @@
                                 <div class="carousel-inner" role="listbox">
 
                                     <div class="carousel-item active">
-                                    <div class="thumbnail"> <img class="d-block img-fluid" alt="first slide" src="/svg/image-20151123-18264-j336wc.jpg"></div>
-                                       
+                                        <img class="d-block img-fluid" alt="first slide" src="/svg/image-20151123-18264-j336wc.jpg">
                                         <div class="carousel-caption d-none d-md-block">
                                                         <h3>Just for You</h3>
                                                         <p>We're here just to solve you problem</p>
                                                     </div>
                                     </div>
                                     <div class="carousel-item">
-                                    <div class="thumbnail"><img class="d-block img-fluid" alt="second slide" src="/svg/screen-2.jpg"></div>
-                                        
+                                        <img class="d-block img-fluid" alt="second slide" src="/svg/screen-2.jpg">
                                         <div class="carousel-caption d-none d-md-block">
                                                         <h3>Yes, We can</h3>
                                                         <p>Dream it, believe because together, we can!</p>
@@ -162,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
              
     </body>

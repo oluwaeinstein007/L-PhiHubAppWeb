@@ -43,4 +43,4 @@ export default function RMap(id = map) {
 
                 }
 
-                ReactDOM.render( < Map / > , document.getElementById('map'));
+                ReactDOM.render( < RMap / > , document.getElementById('map'));

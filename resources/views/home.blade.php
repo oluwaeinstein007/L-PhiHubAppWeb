@@ -15,6 +15,13 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <br>
+                <a href="{{ url('/about') }}"><button  type="button" class="btn btn-primary btn-rounded btn-block btn-lg">Large button</button></a>    
+                    
+                    <form action="" method="post"></form>
+
+
                 </div>
             </div>
         </div>
