@@ -84,7 +84,7 @@
     </div>
 
     <marquee>
-    <h8>Welcome back to L'Phi Hub</h8>
+    <h8 class="m">Welcome back to L'Phi Hub</h8>
     </marquee> 
 
 </div>

@@ -84681,7 +84681,7 @@ function RMap() {
     })
   }));
 }
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map, null), document.getElementById('map'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RMap, null), document.getElementById('map'));
 
 /***/ }),
 
