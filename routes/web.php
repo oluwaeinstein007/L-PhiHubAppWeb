@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
+use App\Mail\ContactForm;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
