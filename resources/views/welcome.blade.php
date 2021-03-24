@@ -161,10 +161,109 @@
                     </div>
                 </div>
             </div>
+            <br>
+
+
+
+            <!-- Put picture of me saying HI here -->
+                
+                <div class="container container-sm card">
+                <legend>Hi, I'm Lanre</legend>
+                <div>
+                <p>I'm a theoretical Physicist turn software developer <br>... and here are my stacks</p>
+                </div>
+                </div>
+                <br>
+
+             
+            <div class="card container">
+            <legend>My STACK</legend>
+                <!-- Put carousel slider here -->
+
+            </div>
+
+            <br>
+
+            <div class="card container">
+            <legend>What I do</legend>
+                <!-- Put carousel slider here -->
+
+            </div>
+            <br>
+
+
+            <div class="container container-sm card">
+                <h5>Sorry for not properly Welcoming you to L'Phi Hub</h5>
+                </div>
+                <br>
+
+             
+
+
+                <div class="infoCard container">
+                <div class="card container-sm justify-content-center align-content-center">
+                <fieldset>
+                <legend class="title">About Us</legend>
+                <div class="info">
+                <img class="d-block img-fluid" alt="" src="/svg/Rotating_earth_(large).gif">
+                <br>
+                <p class="animation text">L'Phi was founded by Lanre Sanni in July, 2020, as a group of Freelance/Remote software developers working to solve your software problems and bring your imaginatio to life</p>
+                <p>We're based in Lagos, don't believe me? <button class="justify-content-right">Find Us</button></p>
+                <br>
+                <p>Check <a href="{{ url('/portfolio') }}"><button>Portfolio</button> </a> for previous works  </p>
+                </div>
+
+                <!-- Put carousel slider here -->
+
+             </fieldset>
+                </div>
+                
+                </div>
+
+                
+
+             
+
+
+
+
+            <fieldset>
+                <legend>Contact Us</legend>
+
+                <div class="contact">
+                <a href="tel:{08057322330}"> <button> Call Us</button></a>
+                <a href="sms:{08057322330}?body={content}"><button> Send us an SMS</button></a>
+                <a href="mailto:{slanre26@gmail.com}?subject={subject}&body={content}"><button>Send us an Email</button></a>
+                <a href="https://twitter.com/OluwaEinstein?s=09"><button>Twitter</button></a>
+                <a href="https://wa.me/message/YJE5JURSSSUPE1"><button>Inbox me on WhatsApp</button></a>
+                <a href="https://www.linkedin.com/in/sanni-lanre-686125ba"><button>LinkedIn</button></a>
+                <a href="https://github.com/oluwaeinstein007"><button>Git Hub</button></a>
+
+                </div>
+
+                or mail us from right here <!-- Put email form here -->
+
+             </fieldset>
 
              
     </body>
     
     <script src="/js/app.js"> </script>
+
+    <script>
+        const card = document.querySelector(".card");
+        const infoCard = document.querySelector(".infoCard");
+        //Moving animation event
+        infoCard.addEventListener('mousemove', (e) =>{
+            console.log("fuck");
+            let xAxis = window.innerWidth/2 - e.pageX;
+            let yAxis = window.innerWidth/2 - e.pageY;
+            card.style.transform = 'rotateY(${xAxis}deg) rotateX(${yAxis}deg)';
+            
+        });
+
+
+    </script>
+
     <script src="{{ asset('js/app.js') }}" defer></script>
 </html>

@@ -117,6 +117,17 @@
                 
                     <a href="tel:{08057322330}">Call Us</a>
 
+                    
+             <fieldset>
+                <legend>Hi, I'm Lanre</legend>
+                <div>
+                <p>I'm a theoretical Physicist turn software developer</p>
+                <p>... and here are my stacks</p>
+                </div>
+
+             </fieldset>
+          
+
 
                    <div class="card justify-content-center col-sm-8 m-auto rounded">
                        <div class="card-body" id>
