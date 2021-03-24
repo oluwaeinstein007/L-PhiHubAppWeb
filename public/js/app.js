@@ -84607,13 +84607,33 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card border-dark"
+    id: "slider1",
+    className: "carousel slide mt-5",
+    dataRide: "carouel"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "carousel-indicators"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "active",
+    dataTarget: "#slider1",
+    dataSlideTo: "0"
+  }, " "), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    dataTarget: "#slider1",
+    dataSlideTo: "1"
+  }, " "), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    dataTarget: "#slider1",
+    dataSlideTo: "2"
+  }, " "), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner",
+    role: "listbox"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-header bg-dark text-white "
-  }, " About Component "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-body",
-    color: "BLUE"
-  }, " I 'm an about component!")), " "), " "), " ");
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "d-block img-fluid",
+    alt: "first slide",
+    src: "/svg/image-20151123-18264-j336wc.jpg"
+  }, " "), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-caption d-none d-md-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Just for You "), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " We 're here just to solve you problem"), " "), " ")))), " "), " ");
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
