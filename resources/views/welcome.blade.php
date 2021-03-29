@@ -169,81 +169,121 @@
                 
                 <div class="container container-sm card">
                 <legend>Hi, I'm Lanre</legend>
-                <div>
+                
                 <p>I'm a theoretical Physicist turn software developer <br>... and here are my stacks</p>
-                </div>
-                </div>
+                
                 <br>
 
              
-            <div class="card container">
+            
             <legend>My STACK</legend>
                 <!-- Put carousel slider here -->
 
-            </div>
-
             <br>
 
-            <div class="card container">
+            
             <legend>What I do</legend>
                 <!-- Put carousel slider here -->
 
-            </div>
+            
             <br>
 
 
-            <div class="container container-sm card">
+            
                 <h5>Sorry for not properly Welcoming you to L'Phi Hub</h5>
-                </div>
+               
                 <br>
 
              
 
 
-                <div class="infoCard container">
-                <div class="card container-sm justify-content-center align-content-center">
-                <fieldset>
-                <legend class="title">About Us</legend>
-                <div class="info">
-                <img class="d-block img-fluid" alt="" src="/svg/Rotating_earth_(large).gif">
+                
+                <h3>About Us</h3>
+              
+                <img alt="" src="/svg/Rotating_earth_(large).gif">
                 <br>
                 <p class="animation text">L'Phi was founded by Lanre Sanni in July, 2020, as a group of Freelance/Remote software developers working to solve your software problems and bring your imaginatio to life</p>
                 <p>We're based in Lagos, don't believe me? <button class="justify-content-right">Find Us</button></p>
                 <br>
                 <p>Check <a href="{{ url('/portfolio') }}"><button>Portfolio</button> </a> for previous works  </p>
-                </div>
+                
 
                 <!-- Put carousel slider here -->
-
-             </fieldset>
                 </div>
                 
-                </div>
 
                 
 
              
 
+            <br>
 
+            <section class="location">
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8977152248194!2d3.2814459!3d6.534600499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fa32398c311%3A0x2cc35b43c9141ba6!2s18%20Jamiu%20Raji%20St%2C%20Egbe%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616770518121!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </section>
+            <br>
 
+            <section class="contact-us">
+                <div class="row">
+                    <div class="contact-col">
+                        <div>
+                            <a href="tel:{08057322330}"> <button> Call Us</button></a>
+                            <span>
+                            <h5>call us</h5>
+                            </span>
+                            <a href="sms:{08057322330}?body={content}"><button>SMS</button></a>
+                            <span>
+                            <h5>sms us</h5>
+                            </span>
+                            <a href="mailto:{slanre26@gmail.com}?subject={subject}&body={content}"><button>Email</button></a>
+                            <span>
+                            <h5>email us</h5>
+                            </span>
+                            <a href="https://twitter.com/OluwaEinstein?s=09"><button>Twitter</button></a>
+                            <span>
+                            <h5>tweet us</h5>
+                            </span>
+                            <a href="https://wa.me/message/YJE5JURSSSUPE1"><button>WhatsApp</button></a>
+                            <span>
+                            <h5>inbox us</h5>
+                            </span>
+                            <a href="https://www.linkedin.com/in/sanni-lanre-686125ba"><button>LinkedIn</button></a>
+                            <span>
+                            <h5>our linkedin</h5>
+                            </span>
+                            <a href="https://github.com/oluwaeinstein007"><button>Git Hub</button></a>
+                            <span>
+                            <h5>our github</h5>
+                            </span>
+                        </div>
 
-            <fieldset>
-                <legend>Contact Us</legend>
+                    </div>
 
-                <div class="contact">
-                <a href="tel:{08057322330}"> <button> Call Us</button></a>
-                <a href="sms:{08057322330}?body={content}"><button> Send us an SMS</button></a>
-                <a href="mailto:{slanre26@gmail.com}?subject={subject}&body={content}"><button>Send us an Email</button></a>
-                <a href="https://twitter.com/OluwaEinstein?s=09"><button>Twitter</button></a>
-                <a href="https://wa.me/message/YJE5JURSSSUPE1"><button>Inbox me on WhatsApp</button></a>
-                <a href="https://www.linkedin.com/in/sanni-lanre-686125ba"><button>LinkedIn</button></a>
-                <a href="https://github.com/oluwaeinstein007"><button>Git Hub</button></a>
+                    <div class="contact-col">
+                    <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
+                 @csrf
+                 
+                 <div class="form-group">
+                 <label for="">Email</label>
+                 <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
+                   <label for="subject">Subject</label>
+                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                 </div>
+                  <div class="form-group">
+                   <label for="">Email</label>
+                 <textarea type="text" class="form-control" name="content" id="video_descrip" placeholder="Email Content"></textarea>
+                 </div>
+         
+               <button class="r btn btn-danger rounded-pill float-right button" name="send_email" type="submit">Send Email</button>
+                </form>
+                    </div>
 
                 </div>
 
-                or mail us from right here <!-- Put email form here -->
+            </section>
 
-             </fieldset>
 
              
     </body>
