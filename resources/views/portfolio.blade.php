@@ -113,10 +113,13 @@
             <div class="content">
                 <div class="title m-b-md">
                     Portfolio
+
                     <i class="fa fa-briefcase fa-3x"></i>
                 </div>
                 <div id="welcome"></div>
-                <div id="map"></div>
+                <div id="social"></div>
+                
+
             </div>
     </body>
     

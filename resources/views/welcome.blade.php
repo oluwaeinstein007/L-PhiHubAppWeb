@@ -67,7 +67,7 @@
     </head>
     <body>
 
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" text-color="red">
                 <div class="container">
                     <a href="{{ url('/') }}" class="navbar-brand">L'Phi</a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -84,6 +84,9 @@
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio and Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <img id="icon" data-toggle="tooltip" data-placement="top" title="Click me to change color theme" src="/svg/Moon.svg" alt="">
                         </li>
                     </ul>
 
@@ -107,203 +110,94 @@
                 </div>
                 </nav>
 
-        <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 m-auto">
-                    
-                             <div id="slider1" class="carousel slide mt-5" data-ride="carouel">
-                                     <!-- Indicator for the Slider -->
-                                     <ol class="carousel-indicators">
-                                     <li class="active" data-target="#slider1" data-slide-to="0"></li>
-                                     <li data-target="#slider1" data-slide-to="1"></li>
-                                     <li data-target="#slider1" data-slide-to="2"></li>
-                                     </ol>
-
-                                        <!-- Carousel Slider -->
-                                <div class="carousel-inner" role="listbox">
-
-                                    <div class="carousel-item active">
-                                        <img class="d-block img-fluid" alt="first slide" src="/svg/image-20151123-18264-j336wc.jpg">
-                                        <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Just for You</h3>
-                                                        <p>We're here just to solve you problem</p>
-                                                    </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block img-fluid" alt="second slide" src="/svg/screen-2.jpg">
-                                        <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Yes, We can</h3>
-                                                        <p>Dream it, believe because together, we can!</p>
-                                                    </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                         <img class="d-block img-fluid" alt="third slide" src="/svg/hacker-with-anonymous-mask_23-2147985387.jpg">
-                                         <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Ahead of Minds</h3>
-                                                        <p>Always ahead to achieve itS</p>
-                                                    </div>
-                                    </div>
-                    
-                                </div>
-                                         <!-- Carousel Slide Control -->
-                                    <a href="#slider1" class="carousel-control-prev" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                     <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a href="#slider1" class="carousel-control-next" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                    </a>
-
-                                       
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
             <br>
 
 
 
             <!-- Put picture of me saying HI here -->
                 
+                
                 <div class="container container-sm card">
-                <legend>Hi, I'm Lanre</legend>
+                <img src="/svg/Profile.svg" alt="">
                 
-                <p>I'm a theoretical Physicist turn software developer <br>... and here are my stacks</p>
-                
+                <h1>Hello, I’m Lanre <img src="/svg/hand2.svg"></h1>
+                <p>and I building <img src="/svg/Love.svg" alt="Love"> Web./Mobile apps.</p>
+                <img src="/svg/MWL.svg" alt="Mobile, Web, anything">
                 <br>
 
-             
-            
-            <legend>My STACK</legend>
-                <!-- Put carousel slider here -->
-
-            <br>
-
-            
-            <legend>What I do</legend>
-                <!-- Put carousel slider here -->
-
-            
-            <br>
-
-
-            
-                <h5>Sorry for not properly Welcoming you to L'Phi Hub</h5>
-               
+                <!-- Laptop here -->
+                <p>I’m am a full-stack developer based in Lagos, the commercial center of Nigeria, I can do both remote/on-site and freelance/full-time job at anyplacein the world</p>
+                <button>Set up a meeting</button>
+                <br>
+                <img src="/svg/VueReact.svg" alt="Vue and React">
+                <p>For frontend dev., I can readily adapt to both Vue.js and React.js but peronally, I perfer React.js and I’m a huge fan of the ease of switching to React-Native</p>
                 <br>
 
-             
+                <img src="/svg/BootSass.svg" alt="SASS and Bootstrap">
+                <p>For frontend design frameworks, Bootstrap and Sass are my everyday goto tools, and I specially love how Sass givens me full control of everything whiles also making dev time shorter</p>
+                <br>
 
+                <img src="/svg/hjc.svg" alt="HTML, CSS and JavaScript">
+                <p>Primarily, I use Laravel (PHP framework) for my backend because of the ease of development</p>
+                <br>
+
+                <img src="/svg/Tex.svg" alt="LaTeX">
+                <p>For technical write-ups, thesis and any research based writing,my favorite writing tool is LaTeX for its ease in writing equations and technical symbols</p>
+                <br>
+
+                <img src="/svg/Figma.svg" alt="Figma">
+                <p>Let’s not forget my favorite UI/UX design tool, Figma, which helps me design and visualize the entire workflow before starting to code and even experiment changes to frontend layouts</p>
+                <br>
+
+                <img src="/svg/GoogleCode.svg" alt="Code">
+                <p>I work best when I’m given the freedom to plan the entire workflow (with or without a team), select tools for the solution I come up with and build everything according to plan with occasional changes</p>
+                <br>
 
                 
-                <h3>About Us</h3>
-              
-                <img alt="" src="/svg/Rotating_earth_(large).gif">
-                <br>
-                <p class="animation text">L'Phi was founded by Lanre Sanni in July, 2020, as a group of Freelance/Remote software developers working to solve your software problems and bring your imaginatio to life</p>
-                <p>We're based in Lagos, don't believe me? <button class="justify-content-right">Find Us</button></p>
+        
                 <br>
                 <p>Check <a href="{{ url('/portfolio') }}"><button>Portfolio</button> </a> for previous works  </p>
                 
 
                 <!-- Put carousel slider here -->
                 </div>
+                <br>
+
+                <nav >
+                    <ul class="list">
+                        <li>Home</li> 
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
                 
 
                 
 
              
 
-            <br>
+            
 
-            <section class="location">
-            <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8977152248194!2d3.2814459!3d6.534600499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fa32398c311%3A0x2cc35b43c9141ba6!2s18%20Jamiu%20Raji%20St%2C%20Egbe%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616770518121!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            </section>
-            <br>
+            
+              
 
-            <section class="contact-us">
-                <div class="row">
-                    <div class="contact-col">
-                        <div>
-                            <a href="tel:{08057322330}"> <button> Call Us</button></a>
-                            <span>
-                            <h5>call us</h5>
-                            </span>
-                            <a href="sms:{08057322330}?body={content}"><button>SMS</button></a>
-                            <span>
-                            <h5>sms us</h5>
-                            </span>
-                            <a href="mailto:{slanre26@gmail.com}?subject={subject}&body={content}"><button>Email</button></a>
-                            <span>
-                            <h5>email us</h5>
-                            </span>
-                            <a href="https://twitter.com/OluwaEinstein?s=09"><button>Twitter</button></a>
-                            <span>
-                            <h5>tweet us</h5>
-                            </span>
-                            <a href="https://wa.me/message/YJE5JURSSSUPE1"><button>WhatsApp</button></a>
-                            <span>
-                            <h5>inbox us</h5>
-                            </span>
-                            <a href="https://www.linkedin.com/in/sanni-lanre-686125ba"><button>LinkedIn</button></a>
-                            <span>
-                            <h5>our linkedin</h5>
-                            </span>
-                            <a href="https://github.com/oluwaeinstein007"><button>Git Hub</button></a>
-                            <span>
-                            <h5>our github</h5>
-                            </span>
-                        </div>
+               
 
-                    </div>
-
-                    <div class="contact-col">
-                    <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
-                 @csrf
-                 
-                 <div class="form-group">
-                 <label for="">Email</label>
-                 <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
-                   <label for="subject">Subject</label>
-                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                 </div>
-                  <div class="form-group">
-                   <label for="">Email</label>
-                 <textarea type="text" class="form-control" name="content" id="video_descrip" placeholder="Email Content"></textarea>
-                 </div>
-         
-               <button class="r btn btn-danger rounded-pill float-right button" name="send_email" type="submit">Send Email</button>
-                </form>
-                    </div>
-
-                </div>
-
-            </section>
 
 
              
     </body>
     
     <script src="/js/app.js"> </script>
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <script>
-        const card = document.querySelector(".card");
-        const infoCard = document.querySelector(".infoCard");
-        //Moving animation event
-        infoCard.addEventListener('mousemove', (e) =>{
-            console.log("fuck");
-            let xAxis = window.innerWidth/2 - e.pageX;
-            let yAxis = window.innerWidth/2 - e.pageY;
-            card.style.transform = 'rotateY(${xAxis}deg) rotateX(${yAxis}deg)';
-            
-        });
 
+                var icon = document.getElementById("icon");
+                icon.onclick = function(){
+                    document.body.classList.toggle("dark-theme");
+                }
 
     </script>
-
-    <script src="{{ asset('js/app.js') }}" defer></script>
 </html>
