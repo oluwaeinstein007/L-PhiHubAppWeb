@@ -86,6 +86,7 @@
                         <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio and Services</a>
                         </li>
                     </ul>
+                    <br>
 
                     <div class="justify-content-right">
             @if (Route::has('login'))
@@ -99,6 +100,8 @@
                             <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
+
+                    <img id="icon" data-toggle="tooltip" data-placement="top" title="Click me to change color theme" src="/svg/Moon.svg" alt="">
                 </div>
             @endif
 
@@ -106,53 +109,85 @@
                     </div>
                 </div>
                 </nav>
+<br>
 
+             <div>
+             <img class="justify-content-right top-left" src="/svg/Profile.svg" alt="">
+             
+             </div>
+             <div class="justify-content-left">
+             
+             </div>
 
-   
             <div class="content">
                 <div class="title m-b-md">
                  Contacts
                     
                 </div>
+
                 
-                    <a href="tel:{08057322330}">Call Us</a>
+
+                <br>
+                <img src="/svg/Social.svg" alt="Social Media">
+                <p>Whether you are interested to do business with me, want to chat or hang out with me, I’m happy to talk to you, my prefered way of contacts are WhatsApp and Email</p>
+                <br>
+                <p>Feel free to check out my social media presence below to get to know me better.</p>
+                
 
                     
-             <fieldset>
-                <legend>Hi, I'm Lanre</legend>
-                <div>
-                <p>I'm a theoretical Physicist turn software developer</p>
-                <p>... and here are my stacks</p>
-                </div>
-
-             </fieldset>
+            <br>
+            <div id="map"></div>
+            <section class="location">
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8977152248194!2d3.2814459!3d6.534600499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fa32398c311%3A0x2cc35b43c9141ba6!2s18%20Jamiu%20Raji%20St%2C%20Egbe%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616770518121!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </section>
+            <br>
           
+
+                   
+
+
 
 
                    <div class="card justify-content-center col-sm-8 m-auto rounded">
                        <div class="card-body" id>
                        <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
-                 @csrf
-                 
-                 <div class="form-group">
-                 <label for="">Email</label>
-                 <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
-                   <label for="subject">Subject</label>
-                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                 </div>
-                  <div class="form-group">
-                   <label for="">Email</label>
-                 <textarea type="text" class="form-control" name="content" id="video_descrip" placeholder="Email Content"></textarea>
-                 </div>
-         
-               <button class="r btn btn-danger rounded-pill float-right" name="send_email" type="submit">Send Email</button>
-                </form>
+                            @csrf
+                            
+                            <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                            <label for="">Email</label>
+                            <textarea type="text" class="form-control" name="content" id="video_descrip" placeholder="Email Content"></textarea>
+                            </div>
+                    
+                            <button class="r btn btn-danger rounded-pill float-right" name="send_email" type="submit">Send Email</button>
+                        </form>
                        </div>
                   
                    </div>
 
                 <div id="map"></div>
             </div>
+            <br>
+            <br>
+
+                    <div>
+                    <footer>
+                        <a class="conIcon" href="tel:{08057322330}"><img src="/svg/Phone.svg" alt="Call Us"></a>
+                        <a class="conIcon" href="sms:{08057322330}?body={content}"><img src="/svg/sms.svg" alt="SMS Us"></a>
+                        <a class="conIcon" href="mailto:{slanre26@gmail.com}?subject={subject}&body={content}"><img src="/svg/Email.svg" alt="Email Us"></a>
+                        <a class="conIcon" href="https://twitter.com/OluwaEinstein?s=09"><img src="/svg/Twitter.svg" alt="Tweet Us"></a>
+                        <a class="conIcon" href="https://wa.me/message/YJE5JURSSSUPE1"><img src="/svg/WhatsApp.svg" alt="WhatsApp"></a>
+                        <a class="conIcon" href="https://www.linkedin.com/in/sanni-lanre-686125ba"><img src="/svg/LinkedIn.svg" alt="Connect on LinkedIn"></a>
+                        <a class="conIcon" href="https://github.com/oluwaeinstein007"><img src="/svg/GitHub.svg" alt="GitHub"></a>
+                    </footer>
+                    </div>
     </body>
     
     <script src="/js/app.js"> </script>

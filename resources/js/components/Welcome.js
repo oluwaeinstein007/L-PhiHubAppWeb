@@ -11,28 +11,61 @@ function Welcome() {
         <
         div className = "col-md-8" >
         <
-        div className = "card" >
+        div >
         <
-        div className = "card-header"
-        dataToggle = "tooltip"
-        dataPlacement = "top"
-        title = "Welcome yo" > Welcome Component < /div>
+        div className = "row" >
+        <
+        div className = "contact-col" >
+        <
+        div >
+        <
+        a href = "tel:{08057322330}" > < button > Call Us < /button></a >
 
         <
-        button className = "btn btn-dark"
-        dataToggle = "tooltip"
-        dataPlacement = "top"
-        title = "Hey yo" >
-        Click me <
-        /button>
+        a href = "sms:{08057322330}?body={content}" > < button > SMS < /button></a >
 
         <
-        div className = "card-body"
-        color = "BLUE" > I 'm an example component!</div> <
-        button class = "btn btn-primary" > yes < /button> <
+        a href = "mailto:{slanre26@gmail.com}?subject={subject}&body={content}" > < button > Email < /button></a >
+
+        <
+        a href = "https://twitter.com/OluwaEinstein?s=09" > < button > Twitter < /button></a >
+
+        <
+        /div>
+
+        <
+        /div>
+
+        <
+        div className = "contact-col" >
+
+        <
+        div >
+        <
+        a href = "https://wa.me/message/YJE5JURSSSUPE1" > < button > WhatsApp < /button></a >
+
+        <
+        a href = "https://www.linkedin.com/in/sanni-lanre-686125ba" > < button > LinkedIn < /button></a >
+
+        <
+        a href = "https://github.com/oluwaeinstein007" > < button > Git Hub < /button></a >
+
+        <
+        /div>
+
+        <
+        /div>
+
+        <
+        /div>
+
+        <
         /div> <
         /div> <
-        /div> <
+        /div>
+
+
+        <
         /div>
 
 
