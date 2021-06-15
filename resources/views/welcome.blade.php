@@ -13,44 +13,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="/css/app/.css" rel="stylesheet">
         <style>
-            html, body {
-               
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
+          .links > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -58,10 +21,6 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
             }
         </style>
     </head>
@@ -108,7 +67,7 @@
 
                     </div>
                 </div>
-                </nav>
+        </nav>
 
        
             <br>
@@ -118,34 +77,58 @@
             <!-- Put picture of me saying HI here -->
                 
                 
-                <div class="container container-sm card">
-                <img src="/svg/Profile.svg" alt="">
+              
+
+                    <div class="container container-sm plate">
+                        <div class="profD">
+                            <img class="profile" src="/svg/Profile.svg" alt="">
+                        </div>  
+                            <br>
+
+                        <h2>Hello, I’m Lanre <img class="bigIcon " src="/svg/hand2.svg"></h2>
+                        <p>and I building <img class="bigIcon" src="/svg/Love.svg" alt="Love"> Web./Mobile apps.</p>
+                        <br>
+                        
+                        <div class="block-1">
+                        <img src="/svg/MWL.svg" alt="Mobile, Web, anything">
+                        </div>
+                               
+
+                             <!-- Laptop here -->
+                         <div class="block-1">
+                         <p>I’m am a full-stack developer based in Lagos, the commercial center of Nigeria, I can do both remote/on-site and freelance/full-time job at anyplacein the world</p>
+                         </div>
+                         <br>
+                         <p><button>Set up a meeting</button></p>
                 
-                <h1>Hello, I’m Lanre <img src="/svg/hand2.svg"></h1>
-                <p>and I building <img src="/svg/Love.svg" alt="Love"> Web./Mobile apps.</p>
-                <img src="/svg/MWL.svg" alt="Mobile, Web, anything">
-                <br>
+                    </div>
 
-                <!-- Laptop here -->
-                <p>I’m am a full-stack developer based in Lagos, the commercial center of Nigeria, I can do both remote/on-site and freelance/full-time job at anyplacein the world</p>
-                <button>Set up a meeting</button>
-                <br>
-                <img src="/svg/VueReact.svg" alt="Vue and React">
-                <p>For frontend dev., I can readily adapt to both Vue.js and React.js but peronally, I perfer React.js and I’m a huge fan of the ease of switching to React-Native</p>
-                <br>
+                    <br>
 
-                <img src="/svg/BootSass.svg" alt="SASS and Bootstrap">
-                <p>For frontend design frameworks, Bootstrap and Sass are my everyday goto tools, and I specially love how Sass givens me full control of everything whiles also making dev time shorter</p>
-                <br>
 
-                <img src="/svg/hjc.svg" alt="HTML, CSS and JavaScript">
-                <p>Primarily, I use Laravel (PHP framework) for my backend because of the ease of development</p>
-                <br>
 
-                <img src="/svg/Tex.svg" alt="LaTeX">
-                <p>For technical write-ups, thesis and any research based writing,my favorite writing tool is LaTeX for its ease in writing equations and technical symbols</p>
-                <br>
+                <div class="container container-sm plate">
+                <div class="block">
+                    <img src="/svg/VueReact.svg" alt="Vue and React">
+                    <p>For frontend dev., I can readily adapt to both Vue.js and React.js but peronally, I perfer React.js and I’m a huge fan of the ease of switching to React-Native</p>
+                    <br>
 
+                    <img src="/svg/BootSass.svg" alt="SASS and Bootstrap">
+                    <p>For frontend design frameworks, Bootstrap and Sass are my everyday goto tools, and I specially love how Sass givens me full control of everything whiles also making dev time shorter</p>
+                    <br>
+                </div>
+
+                <div class="block">
+                    <img src="/svg/hjc.svg" alt="HTML, CSS and JavaScript">
+                    <p>Primarily, I use Laravel (PHP framework) for my backend because of the ease of development</p>
+                    <br>
+
+                    <img src="/svg/Tex.svg" alt="LaTeX">
+                    <p>For technical write-ups, thesis and any research based writing,my favorite writing tool is LaTeX for its ease in writing equations and technical symbols</p>
+                    <br>    
+                </div>
+
+                <div class="block">
                 <img src="/svg/Figma.svg" alt="Figma">
                 <p>Let’s not forget my favorite UI/UX design tool, Figma, which helps me design and visualize the entire workflow before starting to code and even experiment changes to frontend layouts</p>
                 <br>
@@ -153,6 +136,13 @@
                 <img src="/svg/GoogleCode.svg" alt="Code">
                 <p>I work best when I’m given the freedom to plan the entire workflow (with or without a team), select tools for the solution I come up with and build everything according to plan with occasional changes</p>
                 <br>
+                
+                </div>
+
+                
+
+                
+
 
                 
         
@@ -164,14 +154,19 @@
                 </div>
                 <br>
 
-                <nav >
-                    <ul class="list">
-                        <li>Home</li> 
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                    </ul>
+                <div class="navgbar">
+                    <nav id=navbar>
+                    <div class="container">
+                        <ul class="list">
+                            <li>Home</li> 
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                            <li><img id="icon" data-toggle="tooltip" data-placement="top" title="Click me to change color theme" src="/svg/Moon.svg" alt=""></li>
+                        </ul>
+                    </div>
                 </nav>
+                </div>
                 
 
                 

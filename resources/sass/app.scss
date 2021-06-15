@@ -14,9 +14,81 @@
     --secondary-color: #fff;
 }
 
-html,
 body {
     background-color: var(--primary-color);
+    margin: 0;
+    line-height: 2em;
+}
+
+.plate {
+    width: 80%;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 2rem 2rem;
+    border: 30px;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 700px) {
+    .block {
+        float: left;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding-right: 10px;
+        margin-bottom: 50px;
+    }
+    .block-1 {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2 {
+    color: var(--secondary-color);
+}
+
+button {
+    background: none;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-content: center;
+}
+
+.bigIcon {
+    width: 30px;
+    height: 30px;
 }
 
 footer {
@@ -27,6 +99,10 @@ footer {
 .conIcon {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.sticker {
+    width: 40%;
 }
 
 h6 {
@@ -50,17 +126,6 @@ h6 {
     align-items: center;
     display: flex;
     justify-content: center;
-}
-
-.card {
-    width: 80%;
-    background-color: var(--primary-color);
-    border-radius: 30px;
-    padding: 0rem 5rem;
-    border: 30px;
-    justify-content: center;
-    align-content: center;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -114,10 +179,6 @@ h6 {
     background-color: var(--primary-color);
 }
 
-p {
-    color: var(--secondary-color);
-}
-
 .list {
     display: flex;
     justify-content: center;
@@ -136,16 +197,6 @@ p {
 .contact-col div {
     align-items: center;
     margin-bottom: 40px;
-}
-
-button {
-    background: none;
-    padding: 0.5rem 2rem;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .location {

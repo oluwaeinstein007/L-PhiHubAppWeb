@@ -67,7 +67,7 @@
     </head>
     <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" text-color="red">
                 <div class="container">
                     <a href="{{ url('/') }}" class="navbar-brand">L'Phi</a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -84,6 +84,9 @@
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio and Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <img id="icon" data-toggle="tooltip" data-placement="top" title="Click me to change color theme" src="/svg/Moon.svg" alt="">
                         </li>
                     </ul>
 
@@ -105,13 +108,11 @@
 
                     </div>
                 </div>
-                </nav>
+        </nav>
                
-                                <div class="title m-b-md">
-                                <h1>About</h1>
-                                </div>
-                                <img id="icon" data-toggle="tooltip" data-placement="top" title="Click me to change color theme" src="/svg/Moon.svg" alt="">
-            <div class="container container-sm card">
+                                
+        
+            <div class="container container-sm plate">
                <h1>Hello <img src="/svg/hand1.svg" alt=""> </h1>
                <br>
                <p>Hi, I’m Lanre, single and in my 20’s, full-stack Web./Mobile developer </> with an educational background in Physics, I’m doing freelance jobs based in Lagos, but I can also work remotely for international clients.</p>
@@ -159,7 +160,7 @@
             --->
 
             <!--Working Exp.-->
-            <img class="img" src="/svg/work anywhere img.svg" alt="">
+            <img class="img sticker" src="/svg/work anywhere img.svg" alt="">
             <h2><img src="/svg/portf.svg" alt="">Work Experience</h2>
             <ul>
                 <li>
