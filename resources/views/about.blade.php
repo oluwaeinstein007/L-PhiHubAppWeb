@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,44 +13,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="/css/app/.css" rel="stylesheet">
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
+          .links > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -58,10 +21,6 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
             }
         </style>
     </head>
@@ -123,6 +82,7 @@
                 <img src="/svg/Learn.svg" alt="">
             <h2><img src="/svg/Education.svg" alt="">Education</h2>
             <ul>
+                <div class="block-1">
                 <li>
                     <h6><strong>Web/Mobile development</strong></h6>
                     <p>Self-taught <br>2021 - Present</p>
@@ -131,14 +91,18 @@
                     <h6><strong>Microsoft Azure AZ900</strong></h6>
                     <p>Andela Learning Community <br>2021 - Present </p>
                 </li>
+                </div>
+                
+                <div class="block-1">
                 <li>
                     <h6><strong>Google Africa Developer Scholarship</strong></h6>
                     <p>Andela Learning Community <br>2020</p>
                 </li>
                 <li>
                     <h6><strong>Engineering Physics</strong></h6>
-                    <p>Department of Physics and Engineering Physics, Obafemi Awolowo University <br>2016-20 </p>
+                    <p>Department of Physics & Engineering Physics, Obafemi Awolowo University <br>2016-20 </p>
                 </li>
+                </div>
             </ul>
             
             
@@ -160,9 +124,10 @@
             --->
 
             <!--Working Exp.-->
-            <img class="img sticker" src="/svg/work anywhere img.svg" alt="">
+            <img class="images sticker" src="/svg/work anywhere img.svg" alt="">
             <h2><img src="/svg/portf.svg" alt="">Work Experience</h2>
             <ul>
+                <div class="block-1">
                 <li>
                     <h6><strong>Founder/Developer</strong></h6>
                     <p>L’Phi Hub (my Start-up)<br>2020 - Present</p>
@@ -175,6 +140,8 @@
                     <h6><strong>Noir Portal</strong></h6>
                     <p>NoirLabs<br>2021 - Present </p>
                 </li>
+                </div>
+                <div class="block-1">
                 <li>
                     <h6><strong>MoboClinic App</strong></h6>
                     <p>Facebook + Andela #BuildForSDG<br>2020</p>
@@ -183,10 +150,18 @@
                     <h6><strong>E-Learning Web. App</strong></h6>
                     <p>Al-Faruk College<br>2020</p>
                 </li>
+                <blockquote>
+            If you want to hire me, I’m interested to work in company that offer modern technologies such as Reactjs, Vue.js and Laravel, I’m looking for a role that challenges me and also helps me learn as I help design solutions
+            </blockquote>
+                <br>
+                </div>
             </ul>
+           <p></p>
+            <br>
 
              <!--Interest-->
             <h2><img src="/svg/interest.svg" alt="">Interests</h2>
+            <div >
             <p>
             <strong>Music:</strong> Rap (Eminem and 2pac) <br>
             <strong>Movies:</strong> I watch almost any movies ranging from Rom-Com to Sci-fi but I prefer Comedy and Action eg TBBT, Blacklist, Young Sheldon, Brooklyn nine-nine, etc also i:m a big fan of cartoons lik Family guy, Simpsons, and American dads etc <br>
@@ -194,10 +169,8 @@
             <strong>Travel:</strong> I love travelling, exploring, mountaineering, watching nice landscapes and having fun <br>
             <strong>Gaming/Sport:</strong> I’m a diehard fan of #GGMU, I love playing football too (winger CR7 is GOAT) also I play PES and FIFA quite well
             </p>
+            </div>
 
-            <blockquote>
-            If you want to hire me, I’m interested to work in company that offer modern technologies such as Reactjs, Vue.js and Laravel, I’m looking for a role that challenges me and also helps me learn as I help design solutions
-            </blockquote>
 
 
 

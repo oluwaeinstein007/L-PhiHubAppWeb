@@ -10928,7 +10928,8 @@ body {
   justify-content: center;
   position: relative;
   align-content: center;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 @media (min-width: 700px) {
@@ -10936,7 +10937,7 @@ body {
     float: left;
     width: 33.33%;
     box-sizing: border-box;
-    padding-right: 10px;
+    padding-right: 15px;
     margin-bottom: 50px;
   }
 
@@ -10944,8 +10945,11 @@ body {
     float: left;
     width: 50%;
     box-sizing: border-box;
-    margin-bottom: 50px;
   }
+}
+
+blockquote {
+  color: var(--secondary-color);
 }
 
 #navbar ul {
@@ -10969,10 +10973,11 @@ button {
   background: none;
   padding: 0.5rem 2rem;
   border-radius: 30px;
+  color: var(--secondary-color);
   border: none;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
@@ -10989,11 +10994,6 @@ button:hover {
 .bigIcon {
   width: 30px;
   height: 30px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .conIcon {
@@ -11014,23 +11014,12 @@ h6 {
 }
 
 .img {
-  width: 50rem;
-  height: 30rem;
   z-index: 2;
 }
 
-.infoCard {
-  background-color: var(--primary-color);
-  min-height: 80%;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.card img {
-  width: 50%;
-  height: 50%;
+.images {
+  width: 90%;
+  height: 20%;
   padding: 10px 10px;
   z-index: 2;
   position: center;
@@ -11097,21 +11086,6 @@ h6 {
   background-color: var(--primary-color);
 }
 
-.list {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-col {
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-right: 30px;
-  display: flex;
-  justify-content: center;
-  flex-basis: 48%;
-  margin-bottom: 30px;
-}
-
 .contact-col div {
   align-items: center;
   margin-bottom: 40px;
@@ -11138,15 +11112,6 @@ m,
 h8 {
   text-transform: uppercase;
   color: #ffed4a;
-}
-
-input {
-  outline-color: #ffed4a;
-  box-shadow: inset;
-}
-
-nav {
-  outline-color: #ffed4a;
 }
 
 * {

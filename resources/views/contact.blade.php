@@ -150,7 +150,7 @@
 
 
 
-                   <div class="card justify-content-center col-sm-8 m-auto rounded">
+                   <div class="plate  col-sm-8 m-auto rounded">
                        <div class="card-body" id>
                        <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
                             @csrf
