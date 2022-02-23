@@ -4,6 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
 
         <title>L'Phi Hub</title>
 
@@ -116,12 +119,93 @@
 
                     <i class="fa fa-briefcase fa-3x"></i>
                 </div>
-                <div id="welcome"></div>
-                <div id="social"></div>
+                
+             <input type="text" placeholder="Search.." name="place" id="place">
+
+                        <h2>Location is;</h2>
+                       <h3 id="location_name"></h3>
+                       <h2>Temp is;</h2>
+                       <h3 id="location_temp"></h3>
+                       <h2>Cloudiness is;</h2>
+                       <h3 id="location_cloud"></h3>
                 
 
             </div>
+
+            <script>
+    var url = "https://api.weatherbit.io/v2.0/forecast/daily?city=london,gb,&key=a89a7d649c8e476f8af212be6467abc3";
+
+    function getWeather(){
+    $.getJSON( url, function( data ) {
+      var items = [];
+
+      items.push("<li>"+data.city_name+"</li>");
+      items.push("<li>"+data.lon+"</li>");
+      items.push("<li>"+data.timezone+"</li>");
+      items.push("<li>"+data.lat+"</li>");
+      items.push("<li>"+data.state_code+"</li>");
+
+
+      $( "<ul>", {
+        "class": "my-new-list",
+        html: items.join( "" )
+      }).appendTo( "body" );
+    });
+    }
+
+    getWeather();
+  </script>
     </body>
     
-    <script src="/js/app.js"> </script>
+    <script>
+    
+        var options = {
+      method: 'GET',
+      url: 'https://foreca-weather.p.rapidapi.com/location/search/mumbai',
+      params: {lang: 'en', country: 'in'},
+      headers: {
+        'x-rapidapi-host': 'foreca-weather.p.rapidapi.com',
+        'x-rapidapi-key': 'ea792d285cmsh5fc3404e3a41585p1ea0bfjsn803acf421b81'
+        }
+        };
+
+            axios.request(options).then(function (response) {
+            console.log(response.data);
+            let locations = response.data.locations;
+            let x = document.getElementById("location_name");
+            x.innerHTML = locations[0].name;
+            }).catch(function (error) {
+            console.error(error);
+            });
+
+
+    </script>
+
+<script>
+    
+    var options = {
+  method: 'GET',
+  url: "https://foreca-weather.p.rapidapi.com/current/101275339?alt=0&tempunit=C&windunit=MS&tz=Europe%2FLondon&lang=en",
+  params: {lang: 'en', country: 'in'},
+  headers: {
+    "x-rapidapi-host": "foreca-weather.p.rapidapi.com",
+		"x-rapidapi-key": "ec71b998ebmshe861b618b344dabp11a79fjsn54b2dc78dd7d"
+    }
+    };
+
+        axios.request(options).then(function (response) {
+        console.log(response.data);
+        let current = response.data.current;
+        let y = document.getElementById("location_temp");
+        y.innerHTML = current.temperature;
+        let z = document.getElementById("location_cloud");
+        z.innerHTML = current.cloudiness;
+        }).catch(function (error) {
+        console.error(error);
+        });
+
+
+</script>
+    
+
 </html>

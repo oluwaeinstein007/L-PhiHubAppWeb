@@ -4,6 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        
 
         <title>L'Phi Hub</title>
 
@@ -151,12 +154,13 @@
 
 
                    <div class="plate  col-sm-8 m-auto rounded">
+                       
                        <div class="card-body" id>
                        <form method="post" action="{{route('email')}}" enctype="multipart/form-data">
                             @csrf
                             
                             <div class="form-group">
-                            <label for="">Email</label>
+                            <label for="">Email </label>
                             <input type="email" class="form-control" name="from_mail" id="from_mail" placeholder="Enter Your Email">
                             <label for="subject">Subject</label>
                             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
@@ -188,7 +192,33 @@
                         <a class="conIcon" href="https://github.com/oluwaeinstein007"><img src="/svg/GitHub.svg" alt="GitHub"></a>
                     </footer>
                     </div>
+
+
+                    <script>
+    var url = "https://api.weatherbit.io/v2.0/forecast/daily?city=london,gb,&key=a89a7d649c8e476f8af212be6467abc3";
+
+    function getWeather(){
+    $.getJSON( url, function( data ) {
+      var items = [];
+
+      items.push("<li>"+data.city_name+"</li>");
+      items.push("<li>"+data.lon+"</li>");
+      items.push("<li>"+data.timezone+"</li>");
+      items.push("<li>"+data.lat+"</li>");
+      items.push("<li>"+data.state_code+"</li>");
+
+
+      $( "<ul>", {
+        "class": "my-new-list",
+        html: items.join( "" )
+      }).appendTo( "body" );
+    });
+    }
+
+    getWeather();
+  </script>
     </body>
+            
     
-    <script src="/js/app.js"> </script>
-</html>
+    
+   </html>
