@@ -1,16 +1,14 @@
-fetch("https://foreca-weather.p.rapidapi.com/location/search/mumbai?lang=en&country=in", {
-    "method": "GET",
-    "headers": {
-        "x-rapidapi-host": "foreca-weather.p.rapidapi.com",
-        "x-rapidapi-key": "ec71b998ebmshe861b618b344dabp11a79fjsn54b2dc78dd7d"
+// JavaScript code
+function search_place() {
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        } else {
+            x[i].style.display = "list-item";
+        }
     }
-})
-
-.then(response => response.json())
-
-.then(response => {
-        console.log(response);
-    })
-    .catch(err => {
-        console.error(err);
-    });
+}
