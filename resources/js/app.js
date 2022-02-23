@@ -15,3 +15,4 @@ require('./bootstrap');
 require('./components/Welcome');
 require('./components/About');
 require('./components/RMap');
+require('./components/Social');

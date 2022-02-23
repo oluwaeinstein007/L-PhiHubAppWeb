@@ -10903,33 +10903,129 @@ a.text-dark:focus {
   }
 }
 
-html,
-body {
-  background-color: #fff;
-  min-height: 100%;
+:root {
+  --primary-color: #fff;
+  --secondary-color: #212121;
 }
 
-.carousel-item img {
-  width: 50rem;
-  height: 30rem;
+.dark-theme {
+  --primary-color: #212121;
+  --secondary-color: #fff;
+}
+
+body {
+  background-color: var(--primary-color);
+  margin: 0;
+  line-height: 2em;
+}
+
+.plate {
+  width: 80%;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  padding: 2rem 2rem;
+  border: 30px;
+  justify-content: center;
+  position: relative;
+  align-content: center;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+@media (min-width: 700px) {
+  .block {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    margin-bottom: 50px;
+  }
+
+  .block-1 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+blockquote {
+  color: var(--secondary-color);
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2 {
+  color: var(--secondary-color);
+}
+
+button {
+  background: none;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+.profile {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-content: center;
+}
+
+.bigIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.conIcon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sticker {
+  width: 40%;
+}
+
+h6 {
+  color: blue;
+}
+
+.profile {
+  justify-self: right;
+}
+
+.img {
   z-index: 2;
 }
 
-.infoCard {
-  background-color: #fff;
-  min-height: 100vh;
-  width: 70vw;
-  align-items: center;
-  display: flex;
+.images {
+  width: 90%;
+  height: 20%;
+  padding: 10px 10px;
+  z-index: 2;
+  position: center;
+  position: relative;
   justify-content: center;
-}
-
-.card {
-  width: 35rem;
-  background-color: #fff;
-  padding: 0rem 5rem;
-  border: 30px;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  justify-items: center;
 }
 
 .animation {
@@ -10943,7 +11039,7 @@ body {
   }
 
   to {
-    width: 35rem;
+    width: 75%;
   }
 }
 
@@ -10953,19 +11049,19 @@ body {
   }
 
   to {
-    width: 35rem;
+    width: 75%;
   }
 }
 
 @-webkit-keyframes blinkCursor {
   from {
-    border-style-color: black;
+    border-style-color: var(--secondary-color);
   }
 }
 
 @keyframes blinkCursor {
   from {
-    border-style-color: black;
+    border-style-color: var(--secondary-color);
   }
 }
 
@@ -10974,47 +11070,48 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35rem;
+  width: 50%;
   border-right: 4px solid black;
   white-space: nowrap;
   overflow: hidden;
+  color: var(--secondary-color);
 }
 
-.contact {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact button,
-button {
-  background: none;
-  padding: 0.5rem 2rem;
+.contact-us {
+  width: 80%;
+  margin: auto;
   border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
 }
 
-.info {
-  padding: 2rem 0rem;
-  color: #000000;
-  font-size: 1rem;
+.contact-col div {
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location div {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-content: center;
+  padding: 10px 10px;
+}
+
+.location iframe {
+  width: 100%;
 }
 
 m,
 h8 {
   text-transform: uppercase;
   color: #ffed4a;
-}
-
-input {
-  outline-color: #ffed4a;
-  box-shadow: inset;
-}
-
-nav {
-  outline-color: #ffed4a;
 }
 
 * {
